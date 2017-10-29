@@ -1,0 +1,176 @@
+<html>
+<title>SIGN UP></title>
+<style>
+body
+{
+ background-image: url("signuppic1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top; 
+}
+
+kk
+{
+font-size: 40px;
+color:white;
+}
+</style>
+<script>
+function validateForm() {
+    var x = document.forms["signup"]["fname"].value;
+    var f=x;
+    var b = isNaN(x);
+    if (x==null || x=="") {
+        alert("All fields are mandatory");
+        return false;
+    }
+    else if(b==false)
+    {
+      alert("Please Enter a Valid First Name");
+      return false;
+    }
+    
+
+    var x = document.forms["signup"]["lname"].value;
+    var b = isNaN(x);
+    if (x==null || x=="") {
+        alert("All fields are mandatory");
+        return false;
+    }
+    else if(b==false)
+    {
+      alert("Please Enter a Valid Last Name");
+      return false;
+    }
+
+    var x = document.forms["signup"]["eid"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Enter a valid e-mail address");
+        return false;
+    }
+   
+
+    var x = document.forms["signup"]["uname"].value;
+    var count =x.length;
+    var b = isNaN(x);
+    if(count<5||count>10)
+    {
+        alert("Enter a Username of length 5-10");
+        return false;
+    }
+    else if(b==false)
+    {
+      alert("Invalid Username");
+      return false;
+    }
+    
+    var x = document.forms["signup"]["pass"].value;
+    var count =x.length;
+    if(count<8||count>16)
+    {
+        alert("Enter a password of length 8-16");
+        return false;
+    }
+   
+    var y = document.forms["signup"]["rpass"].value;
+    if(x!=y)
+    {
+        alert("Password Mismatched, Please Re-Enter");
+        return false;
+    }
+
+    
+
+}
+</script>
+
+<body>
+<br><br><br><br><br>
+<kk>Sign Up..</kk>
+<br><br><br>
+
+<form id="signup" action="newhome.html" name="signup">
+<input type="text" id="fname" name="fname" placeholder="First Name">
+<input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+<input type="email" id="eid" name="eid" placeholder="E-mail Address"><br><br>
+<input type="text" id="uname" name="uname" placeholder="Username"><br><br>
+<input type="password" id="pass" name="pass" placeholder="Password"><br><br>
+<input type="password" id="rpass" name="rpass" placeholder="Confirm-Password"><br><br>
+<input type="submit" id="up" value="Submit" onClick="return validateForm()" >
+</form>
+
+
+
+
+<style>
+
+
+
+#fname
+{
+ width:225px;
+height:44px;
+font-size:25px;
+margin-left:0px;
+margin_top:5px;
+}
+
+#lname
+{
+ width:225px;
+height:44px;
+font-size:25px;
+margin-left:0px;
+margin_top:15px;
+}
+
+#eid
+{
+ width:450px;
+height:44px;
+font-size:25px;
+margin-left:0px;
+margin_top:5px;
+}
+
+#uname
+{
+ width:450px;
+height:44px;
+font-size:25px;
+margin-left:0px;
+margin_top:5px;
+}
+
+
+#pass
+{
+ width:450px;
+height:44px;
+font-size:25px;
+margin-left:0px;
+margin_top:5px;
+}
+
+#rpass
+{
+ width:450px;
+height:44px;
+font-size:25px;
+margin-left:0px;
+margin_top:5px;
+}
+
+#up
+{
+ width:150px;
+height:44px;
+font-size:25px;
+margin-left:0px;
+margin_top:5px;
+}
+</style>
+
+</html>

@@ -1,0 +1,191 @@
+<html>
+<body>
+<p>
+<img border="2" src="header-texture.jpg" alt="Indian Holidays" width="1300" height="150">
+
+<style>
+
+ul {
+    list-style-type: none;
+    margin: 1;
+    padding: 1;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+h14
+{
+  position:absolute;
+    left:200px;
+    top:100px;
+}
+b{
+     
+    color: white;
+    display: block;
+    width: 100px;
+  
+}
+b{
+     
+    color: blue;
+    display: block;
+    width: 100px;
+  
+}
+
+
+
+
+b:link, b:visited {
+    display: block;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #98bf21;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+b:hover, b:active {
+    background-color: white;
+}
+
+
+h13
+{
+position:absolute;
+left:30px;
+top:10px;
+}
+table, th, td
+{
+border-collapse:collapse;
+}
+th, td
+{
+padding:50px;
+}
+</style>
+<title>Sliderman.js - Examples - Created by Devtrix.net</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="keywords" content="slideman, sliderman.js, javascript slider, jquery, slideshow, effects" />
+	<meta name="description" content="Sliderman.js - will do all the sliding for you :)" />
+	<style type="text/css">
+		* { margin: 0; outline: none; }
+		body { background-color: #77777; }
+		.c { clear: both; }
+		#wrapper { margin: 0 auto; padding: 0 40px 60px 40px; width: 960px; }
+		h2 { padding: 20px 0 10px 0; font-size: 24px; line-height: 40px; font-weight: normal; color: #adc276; text-shadow: 0 1px 3px #222222; }
+	</style>
+
+	<!-- sliderman.js -->
+	<script type="text/javascript" src="js/sliderman.1.3.8.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/sliderman.css" />
+	<!-- /sliderman.js -->
+</div>
+<body>
+	<div id="wrapper">
+
+		<div id="examples_outer">
+			
+
+			<div id="slider_container_2">
+
+				<div id="SliderName_2" class="SliderName_2">
+					<img src="img/1.jpg" width="1000" height="450" alt="Demo2 first" title="Demo2 first" usemap="#img1map" />
+					<map name="img1map">
+						<area href="#img1map-area1" shape="rect" coords="100,100,200,200" />
+						<area href="#img1map-area2" shape="rect" coords="300,100,400,200" />
+					</map>
+					<div class="SliderName_2Description">Place: <strong>Goa</strong></div>
+					<img src="img/2.jpg" width="700" height="450" alt="Demo2 second" title="Demo2 second" />
+					<div class="SliderName_2Description">Place: <strong>Ooty</strong></div>
+					<img src="img/3.jpg" width="700" height="450" alt="Demo2 third" title="Demo2 third" />
+					<div class="SliderName_2Description">Place: <strong>Kerala</strong></div>
+					<img src="img/4.jpg" width="700" height="450" alt="Demo2 fourth" title="Demo2 fourth" />
+					<div class="SliderName_2Description">Place: <strong>Simla</strong></div>
+				</div>
+				<div class="c"></div>
+				<div id="SliderNameNavigation_2"></div>
+				<div class="c"></div>
+
+				<script type="text/javascript">
+					effectsDemo2 = 'rain,stairs,fade';
+					var demoSlider_2 = Sliderman.slider({container: 'SliderName_2', width: 700, height: 450, effects: effectsDemo2,
+						display: {
+							autoplay: 3000,
+							loading: {background: '#000000', opacity: 0.5, image: 'img/loading.gif'},
+							buttons: {hide: true, opacity: 1, prev: {className: 'SliderNamePrev_2', label: ''}, next: {className: 'SliderNameNext_2', label: ''}},
+							description: {hide: true, background: '#000000', opacity: 0.4, height: 50, position: 'bottom'},
+							navigation: {container: 'SliderNameNavigation_2', label: '<img src="img/clear.gif" />'}
+						}
+					});
+				</script>
+
+				<div class="c"></div>
+			</div>
+			<div class="c"></div>
+		</div>
+
+		<div class="c"></div>
+	</div>
+<table style="width:300px"
+>
+<tr>
+  <td><a href="places.html">
+<img border="2" src="goa2.jpg" alt="Indian Holidays" width="150" height="150">
+</a>
+
+<p>GOA<br><a href="places.html">Read more..</a>
+</td>
+  <td><a href="places.html">
+<img border="2" src="kerala.jpg" alt="Indian Holidays" width="150" height="150">
+</a>
+
+<p>Kerala<br><a href="places.html">Read more..</a></td>		
+  <td><a href="places.html">
+<img border="2" src="simla.jpg" alt="Indian Holidays" width="150" height="150">
+</a>
+
+<p>Simla<br><a href="places.html">Read more..</a></td>
+</tr>
+<tr>
+  <td><a href="places.html">
+<img border="2" src="matheran.jpg" alt="Indian Holidays" width="150" height="150">
+</a>
+
+<p>Matheran<br><a href="places.html">Read more..</a></td>
+
+  <td><a href="places.html">
+<img border="2" src="ooty.jpg" alt="Indian Holidays" width="150" height="150">
+</a>
+
+<p>Ooty<br><a href="places.html">Read more..</a></td>		
+  <td><a href="places.html">
+<img border="2" src="rajasthan.jpg" alt="Indian Holidays" width="150" height="150">
+</a>
+
+<p>Rajasthan<br><a href="places.html">Read more..</a></td>
+</tr>
+
+</table>
+<h14><ul>
+  <li><a href="homepage.html"><b>Home</b></a></li>
+  <li><a href="frame_form.html"><b>Enquiry</b></a></li>
+  <li><a href="contactus.html"><b>Contact Us</b></a></li>
+  <li><a href="aboutus.html"><b>About Us</b></a></li>
+  <li><a href="review.html"><b>Reviews</b></a></li>
+</ul></h14>
+
+<h13><a href="homepage.html">
+<img border="2" src="logo.png" alt="Indian Holidays" width="120" height="120">
+</a></h13>
+
+</body>
+</html>

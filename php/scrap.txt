@@ -1,0 +1,34 @@
+<?php
+$con=mysqli_connect("localhost","root","","ihd");
+// Check connection
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+
+$result = mysqli_query($con,"SELECT * FROM review");
+echo "Experiences:";
+
+
+while($row = mysqli_fetch_array($result))
+ {
+   echo "<table border='1'>
+  <tr>
+  <td>  $row['fname']    $row['lname']  </td>
+  
+  </tr>
+  <tr>
+  <td>Rating : $row['star'] </td>
+
+  </tr>
+
+  <tr>
+  <td>Experience : $row['exp']  </td>
+
+  </tr>
+</table>";
+}
+
+
+
+mysqli_close($con);
+?>

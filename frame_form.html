@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+ul {
+    list-style-type: none;
+    margin: 1;
+    padding: 1;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+h14
+{
+  position:absolute;
+    left:200px;
+    top:100px;
+}
+b{
+     
+    color: white;
+    display: block;
+    width: 100px;
+  
+}
+b{
+     
+    color: blue;
+    display: block;
+    width: 100px;
+  
+}
+k {
+    color: #00FFFF;
+}
+
+
+
+
+b:link, b:visited {
+    display: block;
+    font-weight: bold;
+    color: Aqua;
+    background-color: #98bf21;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+b:hover, b:active {
+    background-color: white;
+}
+
+
+h13
+{
+position:absolute;
+left:30px;
+top:10px;
+}
+th, td
+{
+border-collapse:collapse;
+border:1px solid black;
+}
+table {
+    width: 100%;
+}
+th, td
+{
+padding:0px;
+}
+</style>
+
+<script>
+function validateForm() {
+    var x = document.forms["Enquiry"]["FirstName"].value;
+    if (x==null || x=="") {
+        alert("First name must be filled out");
+        return false;
+    }
+
+    var x = document.forms["Enquiry"]["LastName"].value;
+    if (x==null || x=="") {
+        alert("Last name must be filled out");
+        return false;
+    }
+
+    var x = document.forms["Enquiry"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Enter a valid e-mail address");
+        return false;
+    }
+    alert("Your enquiry has been received and we will contact you shortly.");
+}
+</script>
+
+
+</head>
+<body>
+
+<table style="width:300px">
+<tr>
+  <td colspan="3">
+<img border="2" src="header-texture.jpg" alt="Indian Holidays" width="1400" height="160">
+<h13><a href="newhome.html">
+<img border="2" src="logo.png" alt="Indian Holidays" width="120" height="120">
+</a></h13>
+<h14><ul>
+  <li><a href="newhome.html"><b><k>Home</k></b></a></li>
+  <li><a href="frame_form.html"><b><k>Enquiry</k></b></a></li>
+  <li><a href="contactus.html"><b><k>Contact Us</k></b></a></li>
+  <li><a href="about-us.html"><b><k>About Us</k></b></a></li>
+  <li><a href="review.html"><b><k>Reviews</k></b></a></li>
+</ul></h14></td>
+  
+</tr>
+
+<tr>
+<td colsnap="3">
+<form name="Enquiry" action="form.asp" method="get" ">
+<fieldset>
+<legend>Tour Enqiry:</legend>
+First name: <input type="text" name="FirstName" value=""><br>
+Last name: <input type="text" name="LastName" value=""><br>
+Contact No.: <input type="text" name="Contact" value=""><br>
+E-Mail Id: <input type="text" name="email" value=""><br>
+City: <input type="text" name="City" value="City"><br>
+Destination:<select name="Destination">
+<option value="Goa">Goa</option>
+<option value="Kerala">Kerala</option>
+<option value="Himachal" selected>Himachal</option>
+<option value="Kashmir">Kashmir</option>
+</select><br>
+Travel Date:<select name="Travel Date">
+<option value="July 2016">July 2016</option>
+<option value="Aug 2016"> Aug 2016</option>
+<option value="Sept 2016" selected>Sept 2016</option>
+<option value="2016">2016 onwards</option>
+</select><br>
+Budget(per person):<select name="Budget">
+<option value="Below 30k">Below INR 30k</option>
+<option value="30k-40k">INR 30k-40k</option>
+<option value="40k-50k">INR 40k-50k</option>
+<option value="onwards 50k">INR 50k onwards</option>
+</select><br>
+More Details: <input type="text" name="MD" value="OPTIONAL"><br>
+<input type="submit" value="Submit" onClick="return validateForm()">
+</fieldset>
+</form> 
+<a href="terms-and-conditions.html">Terms and Conditions</a>
+
+</td>
+</tr>
+</body>
+</html>

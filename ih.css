@@ -1,0 +1,72 @@
+ul {
+    list-style-type: none;
+    margin: 1;
+    padding: 1;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+h14
+{
+  position:absolute;
+    left:200px;
+    top:100px;
+}
+b{
+     
+    color: white;
+    display: block;
+    width: 100px;
+  
+}
+b{
+     
+    color: blue;
+    display: block;
+    width: 100px;
+  
+}
+k {
+    color: #00FFFF;
+}
+
+
+
+
+b:link, b:visited {
+    display: block;
+    font-weight: bold;
+    color: Aqua;
+    background-color: #98bf21;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+b:hover, b:active {
+    background-color: white;
+}
+
+
+h13
+{
+position:absolute;
+left:30px;
+top:10px;
+}
+th, td
+{
+border-collapse:collapse;
+border:0px solid black;
+}
+table {
+    width: 100%;
+}
+th, td
+{
+padding:0px;
+}
